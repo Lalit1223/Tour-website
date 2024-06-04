@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <style>
+      form {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        max-width: 400px;
+        gap: 10px; /* Add some space between elements */
+      }
+      label {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="./login.html">
+      <label for="name">NAME:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="ENTER FULL NAME"
+        required
+      />
+      <label for="email">EMAIL:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="ENTER EMAIL ID"
+        required
+      />
+      <label for="mobile">MOBILE NUMBER:</label>
+      <input
+        type="tel"
+        name="mobile"
+        id="mobile"
+        pattern="[0-9]{10}"
+        placeholder="ENTER MOBILE NUMBER"   
+        required
+      />
+      <label for="password">PASSWORD:</label>
+      <input
+        type="password"
+        name="password"
+        id="Password"
+        required
+        placeholder="ENTER PASSWORD"
+      />
+      <label for="password2">CONFIRM PASSWORD:</label>
+      <input
+        type="password"
+        name="password2"
+        id="Password2"
+        required
+        placeholder="RE-ENTER PASSWORD"
+      />
+      <input type="submit" value="CREATE ACCOUNT" id="signup" />
+    </form>
+  </body>
+</html>
