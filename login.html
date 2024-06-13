@@ -3,36 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <link rel="stylesheet" href="style2.css" />
+    <title>LG TOURS - Login</title>
   </head>
   <body>
-    <form action="./1.htm">
-    <label for="login_id"
-      ><span style="color: darkgoldenrod">Username:</span></label
-    >
-    <input
-      type="text"
-      name="login_id"
-      id="login_id"
-      placeholder="Enter number or mail "
-    />
-    <br />
-    <br />
-
-    <form for="password">
-      <span style="color: darkgoldenrod">Password:</span>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="Enter password"
-        required
-      />
-      <br />
-      <br />
-      <input class="submit" type="submit" id="submit" />
-      <br />
-      <a href="./signup.html"><em>didn't have account?</em></a>
-    </form>
+    <div class="login-page">
+      <div class="login-form-container">
+        <h2>Login to LG TOURS</h2>
+        <form action="./1.htm">
+          <div class="input-group">
+            <label for="login_id">Username:</label>
+            <input
+              type="text"
+              name="login_id"
+              id="login_id"
+              placeholder="Enter number or email"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input class="submit" type="submit" value="Login" />
+          </div>
+        </form>
+        <p class="signup-link">
+          <a href="./signup.html"><em>Don't have an account? Sign up</em></a>
+        </p>
+      </div>
+    </div>
   </body>
 </html>

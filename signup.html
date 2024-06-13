@@ -3,64 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup</title>
-    <style>
-      form {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-        max-width: 400px;
-        gap: 10px; /* Add some space between elements */
-      }
-      label {
-        text-align: left;
-      }
-    </style>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
-    <form action="./login.html">
-      <label for="name">NAME:</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="ENTER FULL NAME"
-        required
-      />
-      <label for="email">EMAIL:</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="ENTER EMAIL ID"
-        required
-      />
-      <label for="mobile">MOBILE NUMBER:</label>
-      <input
-        type="tel"
-        name="mobile"
-        id="mobile"
-        pattern="[0-9]{10}"
-        placeholder="ENTER MOBILE NUMBER"   
-        required
-      />
-      <label for="password">PASSWORD:</label>
-      <input
-        type="password"
-        name="password"
-        id="Password"
-        required
-        placeholder="ENTER PASSWORD"
-      />
-      <label for="password2">CONFIRM PASSWORD:</label>
-      <input
-        type="password"
-        name="password2"
-        id="Password2"
-        required
-        placeholder="RE-ENTER PASSWORD"
-      />
-      <input type="submit" value="CREATE ACCOUNT" id="signup" />
-    </form>
+    <div class="signup-page">
+      <div class="signup-form-container">
+        <h2>Sign Up</h2>
+        <form action="./login.html">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="input-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required />
+          </div>
+
+          <button type="submit" class="submit">Sign Up</button>
+        </form>
+        <div class="login-link">
+          Already have an account? <a href="login.html">Log In</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
