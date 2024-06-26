@@ -10,7 +10,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif; /* Change font as per your preference */
-  background-color: #f0f0f0; /* Light background */
+  background-color: white; /* Light background */
   height: 100%;
 }
 body{
@@ -187,12 +187,19 @@ button:hover {
   position: absolute;
 
 }
+.gif2{
+  margin: 40px 0px 0px 30px ;
+  height: 400px;
+  width: 400px;
+  position: relative;
+
+}
 .login-page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
-  background-color: #ecf0f1; /* Soft background color */
+  background-color: white; /* Soft background color */
 }
 
 .login-form-container {
@@ -276,24 +283,30 @@ button:hover {
 .signup-page {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full viewport height */
-  background-color: #ecf0f1; /* Soft background color */
+  height: 550px;
+  background-color:white; /* Soft background color */
+  position: fixed;
+  top: 10px;
+  left: 550px;
+  z-index: 1000;
 }
 
 .signup-form-container {
-  background-color: #ffffff;
-  padding: 40px 30px;
+  background-image: linear-gradient(120deg , red,green,blue ,yellow) ;
+color: white;
+  padding: 30px 30px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
   max-width: 400px;
+  height: 550px;  
+ 
 }
 
 .signup-form-container h2 {
   margin-bottom: 20px;
-  color: #333;
+  color: #e6dddd;
   font-size: 24px;
 }
 
@@ -305,7 +318,7 @@ button:hover {
 .signup-form-container label {
   display: block;
   margin-bottom: 8px;
-  color: #2980b9;
+  color: #f0f2f3;
   font-size: 16px;
 }
 
@@ -328,10 +341,10 @@ button:hover {
 }
 
 .signup-form-container .submit {
-  width: 100%;
+  width: 65%;
   padding: 12px 0;
-  background-color: #2980b9;
-  color: white;
+  background-color: #eff5f7;
+  color: rgb(12, 12, 12);
   border: none;
   border-radius: 5px;
   font-size: 18px;
@@ -340,7 +353,7 @@ button:hover {
 }
 
 .signup-form-container .submit:hover {
-  background-color: #1b6f96;
+  background-color: #b7d8e9;
 }
 
 .signup-form-container .login-link {
@@ -349,11 +362,11 @@ button:hover {
 }
 
 .signup-form-container .login-link a {
-  color: #2980b9;
+  color: #f2f7fa;
   text-decoration: none;
 }
 
 .signup-form-container .login-link a:hover {
   text-decoration: underline;
-  color: #1b6f96;
+  color: #0d0d0e;
 }
